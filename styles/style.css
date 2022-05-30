@@ -1,21 +1,118 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: Impact, serif;/*serif is a fallback value*/
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 15px; /* ? between camper cafe menu and Est. 2020 ? */
+}
+
+h2 {
+    font-size: 30px;
+}
+
 h1,
 h2,
 p {
     text-align: center;
 }
 
-body {
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg)
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
 }
+
+hr {
+    height: 2px;/*total is 4px , 2px from border 2 px from hr itself with background*/
+    background-color: brown;
+    border-color: brown;
+}
+
+.bottom-line { /*????*/
+    margin-top: 25px;
+}
+
+
 
 .menu {
     /*width: 300px;*/
     width: 80%;
+    max-width: 500px;
     background-color: burlywood;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+    /*padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;*/
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.established {
+    font-style: italic;
+}
+
+/*FOOTER*/
+
+footer {
+    font-size: 14px;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+a {
+    color: black;
+}
+
+a:visited  {
+    color: grey;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: white;
 }
 
 /*   
     Change the width property's value to be 80%, to make it 80% the width of its parent element (body).
-*/
+    display: inline-block allows to set a width and height on the element.
+    Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
+    display: inline display: inline-block display: block.
+    Since you know the prices on the right have significantly fewer characters, change the flavor class width value to be 75% and the price class width value to be 25%.
+    Fallbacks are used in instances where the initial is not found/available.
+    The default value of a property named border-width is 1px for all edges of hr elements.
+    To make the footer links the same color regardless if a link has been visited, use a type selector for the anchor element (a) and use the value black for the color property.
+    You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+    You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
+    */

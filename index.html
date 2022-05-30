@@ -21,33 +21,56 @@
     <div class="menu">
         <header>
             <h1>CAMPER CAFE</h1>
-            <p>Est. 2020</p>
+            <p class="established">Est. 2020</p>
         </header>
+        <hr>
         <main>
             <section>
                 <h2>Coffee</h2>
-                <article>
-                    <p class="flavor">French Vanilla</p>
-                    <p>3.00</p>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon">
+                <article class="item">
+                    <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+                    
                 </article>
-                <article>
-                    <p>Caramel Macchiato</p>
-                    <p>3.75</p>
+                <article class="item">
+                    <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+                    
                 </article>
-                <article>
-                    <p>Pumpkin Spice</p>
-                    <p>3.50</p>
+                <article class="item">
+                    <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+                    
                 </article>
-                <article>
-                    <p>Hazelnut</p>
-                    <p>4.00</p>
+                <article class="item">
+                    <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+                    
                 </article>
-                <article>
-                    <p>Mocha</p>
-                    <p>4.50</p>
+                <article class="item">
+                    <p class="flavor">Mocha</p><p class="price">4.50</p>
+                   
                 </article>
             </section>
+            <section>
+                <h2>Desserts</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
+                <article class="item">
+                    <p class="dessert">Donut</p><p class="price">1.50</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+                  </article>
+                  <article class="item">
+                    <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+                  </article>
+                  <article class="item">
+                    <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+                  </article>
+            </section>
         </main>
+        <hr class="bottom-line">
+        <footer>
+            <p><a href="https://www.freecodecamp.org">Visit our website</a></p>
+            <p class="address">123 Free Code Camp Drive</p>
+        </footer>
     </div>
 </body>
 
@@ -58,4 +81,11 @@
     The div element is used mainly for design layout purposes .
      Add an empty article element under the Coffee heading. It will contain a flavor and price of each coffee you currently offer.
     article elements commonly contain multiple elements that have related information. 
-    -->
+    p elements are block-level elements, so they take up the entire width of their parent element.
+    To get them on the same line, you need to apply some styling to the p elements, so they behave more like inline elements. Add a class attribute with the value item to the first article element under the Coffee heading.
+    You can style all the p elements nested anywhere in elements with a class named item like this:
+    
+    .item p { }
+    Using the above selector, add a display property with value inline-block so the p elements behave more like inline elements.    
+
+-->
